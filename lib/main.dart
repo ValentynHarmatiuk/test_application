@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:test_application/InteractableWidget.dart';
 
 void main() => runApp(TestApplication());
 
 class TestApplication extends StatelessWidget {
-  GestureDetector(
-      onTa
-      )
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Test Application',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('My Test Application'),
-        ),
-        body: Center(
-          child: Text('Hey there'),
-        ),
-      ),
+        home: Scaffold(
+            body: Container(
+                child: InteractableWidget()
+            )
+        )
     );
   }
 }
